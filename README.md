@@ -1,38 +1,30 @@
 [TOC]
 
-# 源码及演示环境地址
-
-源码：http://192.168.0.221:7003/project-base/admin-demo-vue
-
-演示环境：http://admin-demo.dev.fero.com.cn
-
-项目生成器模板：http://192.168.0.221:7003/liusiyao/vue-template
-
 # 包管理
 
 ## 上传包
 > **注意：每次更新包，必须修改`package.json`中的版本号，并执行`npm run lib`构建**
-1. 使用用户名密码邮箱登录本地NPM库
+1. 使用用户名密码邮箱登录NPM库
 
    ```shell
-   npm login -registry http://192.168.0.221:7004/repository/npm-hosted/
-   Username:npm
-   Password:1qaz2wsx
-   Email: npm@fero.com.cn
+   npm login
+   Username:
+   Password:
+   Email: 
    ```
 
-   成功后显示 `Logged in as npm on http://192.168.0.221:7004/repository/npm-hosted/.`​
+   成功后显示 `Logged in as ...`
 
-2. 执行 `npm publish -registry http://192.168.0.221:7004/repository/npm-hosted/`
+2. 执行 `npm publish`
 
-   成功后显示 `+ fero-toolkit-vue@x.x.x`
+   成功后显示 `+ element-toolkit-vue@x.x.x`
 
 ## 撤销包版本
-`npm unpublish fero-toolkit-vue@x.x.x -registry http://192.168.0.221:7004/repository/npm-hosted/`
+`npm unpublish element-toolkit-vue@x.x.x`
 
 ##使用包
 
-`npm i -registry http://192.168.0.221:7004/repository/npm-group/fero-toolkit-vue`
+`npm i element-toolkit-vue`
 
 # 组件文档
 
@@ -1291,8 +1283,6 @@ export default {
 | -    | 默认插槽，用于容纳页面元素 |
 
 # 页面布局指引
-
-参考在线演示环境（http://admin-demo.dev.fero.com.cn/）进行布局
 
 ##  列表页
 
