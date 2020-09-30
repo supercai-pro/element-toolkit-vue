@@ -1,0 +1,54 @@
+{
+  "name": "fero-toolkit-vue",
+  "version": "1.7.7",
+  "description": "Vue项目工具包",
+  "main": "lib/fero-toolkit-vue.umd.js",
+  "keyword": "fero vue element toolkit",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name fero-toolkit-vue --dest lib src/index.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.7.2",
+    "lodash": "^4.17.11",
+    "url-parse": "^1.4.7",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.0.5",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

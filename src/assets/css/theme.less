@@ -1,0 +1,114 @@
+// 主题色
+@color-main: #485173;
+
+
+// 主要色
+@color-primary: #4B77E9;
+@color-danger: #E8744F;
+@color-success: #4EB67B;
+@color-info: #909399;
+@color-warning: #e6a23c;
+
+// 背景色
+@color-bg-grey: #F3F4F8;
+@color-bg-window: #E4E6F2;
+@color-bg-active: #EDF5FA;
+
+// 分割线色
+@color-line-normal: #E5E5E5;
+@color-line-table-normal: #EEEEEE;
+@color-line-danger: @color-danger;
+@color-line-active: @color-primary;
+
+// 按钮颜色
+@color-btn-primary: @color-primary;
+@color-btn-primary-active: fade(@color-primary,90%);
+@color-btn-primary-disabled: fade(@color-primary,60%);
+@color-btn-danger: @color-danger;
+@color-btn-danger-active: fade(@color-danger,90%);
+@color-btn-danger-disabled: fade(@color-danger,60%);
+@color-btn-info: @color-info;
+@color-btn-info-active: fade(@color-info,90%);
+@color-btn-info-disabled: fade(@color-info,60%);
+@color-btn-warning: @color-warning;
+@color-btn-warning-active: fade(@color-warning,90%);
+@color-btn-warning-disabled: fade(@color-warning,60%);
+@color-btn-success: @color-success;
+@color-btn-success-active: fade(@color-success,90%);
+@color-btn-success-disabled: fade(@color-success,60%);
+@color-btn-default: @color-primary;
+@color-btn-default-active: fade(@color-primary,90%);
+@color-btn-default-disabled: fade(@color-primary,60%);
+
+// 文字
+@color-text-dark: #333;
+@color-text-grey: #666;
+@color-text-light-grey: #999;
+@color-text-light-grey: #999;
+@color-text-white: #FFF;
+@color-text-danger: @color-danger;
+@color-text-success: @color-success;
+@color-text-link: @color-primary;
+@font-size-small: 12px;
+@font-size-middle: 14px;
+@font-size-big: 18px;
+@font-size-huge: 24px;
+@tree-node-height:36px;
+
+
+
+// 组件专有
+@color-side-bg: @color-text-white;
+@color-side-font: @color-text-dark;
+@color-side-title: @color-text-light-grey;
+@color-side-title-icon: @color-text-light-grey;
+@color-side-title-icon-active: @color-text-light-grey;
+@color-side-active-bg: @color-bg-grey;
+@color-side-active-color: @color-text-link;
+@color-time-step-main:@color-primary;
+@color-table-special:#FFCE79;
+@color-table-special-bg:#FFF0D6;
+@color-collapse-line:#DFE6EC;
+@color-collapse-header:#F3F5F9;
+@color-collapse-header-btn:#6279DC;
+
+
+// 主题颜色切换
+.normal {
+  .themeColors(
+          @color-main,@color-primary,@color-danger,@color-success,@color-line-normal,
+          @color-line-danger,@color-line-active,@color-btn-primary,@color-btn-primary-active,@color-btn-primary-disabled,
+          @color-btn-danger,@color-btn-danger-active,@color-btn-danger-disabled,@color-btn-success,@color-btn-success-active,
+          @color-btn-success-disabled,@color-btn-default,@color-btn-default-active,@color-btn-default-disabled,@color-text-danger,
+          @color-text-success,@color-text-link,@color-side-active-color,@color-time-step-main)
+}
+// 带状态表格颜色
+@color-warning-row: rgba(212,61,46,0.1);
+@color-success-row: rgba(0,180,93,0.1);
+.tableRowColor(@color){
+  background: @color;
+}
+// 列表高度level小、中、大
+@table-level-mini-td: 6px;
+@table-level-mini-th: 4px;
+@table-level-small-td: 10px;
+@table-level-small-th: 8px;
+@table-level-medium-td: 20px;
+@table-level-medium-th: 18px;
+.tableLevelHeight(@level){
+  padding-top: @level;
+  padding-bottom: @level;
+}
+
+// 提示信息样式覆盖
+@color-alert-info: rgba(72,124,251,0.1);
+@color-alert-info-icon: #487CFB;
+@color-alert-success: rgba(57,195,156,0.1);
+@color-alert-success-icon: #39C39C;
+@color-alert-warning: rgba(240,172,73,0.1);
+@color-alert-warning-icon: #F0AC49;
+@color-alert-error: rgba(243,91,126,0.1);
+@color-alert-error-icon: #F35B7E;
+
+// 内阴影
+@inset-shadow: #DDDDDD;
